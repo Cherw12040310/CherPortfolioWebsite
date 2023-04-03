@@ -181,16 +181,15 @@ padding: 250px;
 	flex-direction: row;
 	align-items: top;
 	padding:20px;
-	gap: 60px;
+	gap: 10px;
 }
 
-.img{
+.protrait{
 	text-align: right;
-
 }
 
-.img img{
-	margin-top: 120px;
+.protrait img{
+	margin-top: 100px;
 	margin-right: 100px;
 	width:60%;
 	border-radius: 28px;
@@ -236,6 +235,22 @@ footer p{
 }
 
 @media only screen and (max-width: 800px) {
+
+	.scroll-down {
+  position: absolute;
+  bottom: 260px;
+  width: 25px;
+  height: 25px;
+  border-bottom: 3px solid black;
+  border-right: 3px solid black;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0%) rotate(45deg);
+  -moz-transform: translate(-50%, 0%) rotate(45deg);
+  transform: translate(-50%, 0%) rotate(45deg);
+  -webkit-animation: fade_move_down 4s ease-in-out infinite;
+  -moz-animation:    fade_move_down 4s ease-in-out infinite;
+  animation:         fade_move_down 4s ease-in-out infinite;
+}
 
 
 	nav {
@@ -286,8 +301,8 @@ font-weight: bold;
 float:left;
 font-family: 'Assistant', sans-serif;
 cursor: pointer;
-
 }
+
 #container1{
 	position:relative;
 	align-items: center;
@@ -360,17 +375,28 @@ cursor: pointer;
 	background: #ffffff radial-gradient(ellipse at center, #D7E3F9 , #F9D7E5 50% , #FFFFED);
 padding: 100px;
 }
+.bio{
+	margin-right: 40px;
+	margin-bottom: 100px;
+	}
 
-
-	#Cher {
-		flex-direction: column;
+#Cher {
+		display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}
+.protrait img {
+		 width: 70%;
+  border-radius: 8px;
+  object-fit: cover;
+  filter: brightness(100%);
+  transition: filter 0.3s ease-in-out;
+  margin-right: 100px;
 	}
-	.img img {
-		margin-right: 80px;
+.BIG-text{
+	margin-left: 0; /* removed margin-left */
+  text-align: center;
 	}
-	.BIG-text{
-	margin-right:70px;
-	}
-	.bio{
-	}
+	#Cher .protrait img {
+  margin-right: 50px; /* reduced margin-right value */
 }

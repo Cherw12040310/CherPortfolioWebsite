@@ -19,7 +19,6 @@ font-weight: bold;
 float:left;
 font-family: 'Assistant', sans-serif;
 cursor: pointer;
-
 }
 nav .menu-toggle {
   display: none;
@@ -72,16 +71,42 @@ nav li a:hover{
     height: auto;
 }
 .section2{
-	padding: 50px 240px;
+	padding: 60px 300px;
 	background:#F5F5F5;
+	position: relative;
 }
 .section2 h2{
 font-weight: normal;
+margin-bottom: 20px;
 }
 .section2 h1{
 	text-align: center;
      font-size: 36px;
      margin-bottom: 20px;
+}
+.action-button{
+	position: absolute;
+  bottom: 2vw;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #FFFFFF;
+  background-color: #A83932;
+  padding: 5px 42px;
+  text-align: center;
+  display: inline-block;
+  font-size: 2.0vw;
+  border-radius: 20px;
+  transition-duration: 0.4s;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+.action-button a {
+  color: white;
+  text-decoration: none;
+}
+.action-button:hover{
+ background-color: black;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
 }
 
 .section3{
@@ -112,7 +137,6 @@ font-weight: normal;
 	  display: flex;
   justify-content: center; /* centers the images horizontally */
   align-items: center; /* centers the images vertically */
-  	background:#FFFBEC;
 }
 .section5 img {
   max-width: 13%; /* ensures images don't exceed the width of the container */
@@ -125,7 +149,6 @@ font-weight: normal;
 	  display: flex;
   justify-content: center; /* centers the images horizontally */
   align-items: center; /* centers the images vertically */
-  background:#FFFBEC;
 }
 .section6 img {
   max-width: 13%; /* ensures images don't exceed the width of the container */
@@ -172,4 +195,128 @@ footer a {
 }
 footer p{
 	font-size: 16px;
+}
+
+
+@media only screen and (max-width: 800px) {
+	nav {
+    padding: 0px 20px;
+  }
+  
+  nav .menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 75px;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    padding: 20px 0;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+  }
+  
+  nav .menu-toggle {
+    display: block;
+    font-size: 25px;
+    cursor: pointer;
+  }
+  
+  nav .menu-toggle i {
+    display: block;
+    margin-top: 8px;
+  }
+  
+  nav .menu li {
+    display: block;
+    margin-bottom: 20px;
+  }
+  
+  nav .menu a {
+    font-size: 16px;
+    padding: 8px 0;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  nav .menu a:last-child {
+    border-bottom: none;
+  }
+
+nav .logo p{
+font-size: 27px;
+font-weight: bold;
+float:left;
+font-family: 'Assistant', sans-serif;
+cursor: pointer;
+margin-bottom: 20px;
+}
+.section2{
+	padding: 50px 100px;
+	background:#F5F5F5;
+}
+.section2 h2{
+font-weight: normal;
+}
+.section2 h1{
+	text-align: center;
+     font-size: 36px;
+     margin-bottom: 20px;
+}
+.action-button{
+	position: absolute;
+  bottom: 2vw;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #FFFFFF;
+  background-color: #A83932;
+  padding: 15px 42px;
+  text-align: center;
+  display: inline-block;
+  font-size: 2.4vw;
+  border-radius: 20px;
+  transition-duration: 0.4s;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  }
+.section4 {
+  display: flex;
+  justify-content: center; /* centers the images horizontally */
+  align-items: center; /* centers the images vertically */
+  justify-content: center;
+  align-items: center;
+}
+
+.section4 img {
+  max-width: 25%; /* ensures images don't exceed the width of the container */
+  margin: 0 20px; /* adds some spacing between the images */
+      object-fit: cover;
+}
+.section5, .section6 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.section5 img, .section6 img {
+  width: calc(33.33% - 10px); /* Set the width of each image */
+  margin: 20px; /* Add margin to separate the images */
+}
+.section7{
+	margin-top: 30px;
+	   display: flex;
+	background:#FFFBEC;
+	flex-direction: column;
+	align-items: center;
+	  justify-content: center;
+}
+.section7 img{
+ max-width: 85%;
+  object-fit: cover;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    margin-bottom: 40px;
+
+}
+.section7 h1{
+	text-align: center;
+	margin-bottom: 20px;
+}
 }
